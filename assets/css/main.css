@@ -72,18 +72,35 @@ h1 {
     display: flex;
     gap: 15px;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-behavior: smooth;
     padding: 10px 40px;
+    white-space: nowrap;
+}
+
+.movie-container::-webkit-scrollbar {
+    width: 0px;
+    height: 8px;
+    background: transparent;
+}
+
+.movie-container {
+    -ms-overflow-style: none;
+}
+
+.movie-container {
+    scrollbar-width: none;
 }
 
 .movie-card {
     background: #222;
     border-radius: 10px;
-    width: 150px;
+    width: 180px;
     flex: 0 0 auto;
     padding: 10px;
     position: relative;
     text-align: center;
+    overflow: hidden;
 }
 
 .movie-card img {

@@ -1,4 +1,6 @@
 <?php
+    include_once __DIR__ . '/../components/template/movieCard.component.php';
+
 $movies = [
     [
         "title" => "The Walking Dead: Dead City", 
@@ -61,14 +63,15 @@ $movies = [
         "img" => "transformer_Last_Knight.jfif"
     ]
 ];
-function displayMovies($movies) {
-    include_once __DIR__ . '/../components/template/movieCard.component.php';
-    echo '<div class="movie-wrapper">';
-    echo '<div class="movie-container">';
-    foreach ($movies as $movie) {
-        echo createMovieCard($movie);
+if (!function_exists('displayMovies')) {
+    function displayMovies($movies) {
+        echo '<div class="movie-wrapper">';
+        echo '<div class="movie-container">';
+        foreach ($movies as $movie) {
+            echo createMovieCard($movie);
+        }
+        echo '</div>';
+        echo '</div>';
     }
-    echo '</div>';
-    echo '</div>';
 }
-?>
+
