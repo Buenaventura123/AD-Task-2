@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>All Movies</title>
     <link rel="stylesheet" href="../../assets/css/main.css">
@@ -14,7 +15,9 @@
         }
     </script>
 </head>
+
 <body>
+    <?php echo createNavbar(active: 'All Movies'); ?>
     <h1>All Movies</h1>
     <div class="movie-wrapper">
         <div class="movie-container" id="movieScroll">
@@ -28,4 +31,5 @@
         </div>
     </div>
 </body>
+
 </html>
