@@ -64,7 +64,10 @@
 <body>
     <?php echo createNavbar(active: 'All Movies'); ?>
 
-    <h1>All Movies</h1>
+    <div class="section-header">
+        <h1>All Movies</h1>
+        <a href="../all-movies/index.php" class="show-all">Show All</a>
+    </div>
     <div class="movie-wrapper">
         <button class="scroll-arrow left" onclick="scrollLeft('movieScroll')">&#8592;</button>
         <div class="movie-container" id="movieScroll">
@@ -73,7 +76,10 @@
         <button class="scroll-arrow right" onclick="scrollRight('movieScroll')">&#8594;</button>
     </div>
 
-    <h2 style="margin-top: 40px;">Recommended Movies</h2>
+    <div class="section-header" style="margin-top: 40px;">
+        <h2>Recommended Movies</h2>
+        <a href="../recommended/index.php" class="show-all">Show All</a>
+    </div>
     <div class="movie-wrapper">
         <button class="scroll-arrow left" onclick="scrollLeft('recommendedScroll')">&#8592;</button>
         <div class="movie-container" id="recommendedScroll">
@@ -81,6 +87,6 @@
         </div>
         <button class="scroll-arrow right" onclick="scrollRight('recommendedScroll')">&#8594;</button>
     </div>
-
 </body>
+
 </html>
