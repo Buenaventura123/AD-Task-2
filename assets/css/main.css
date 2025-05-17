@@ -71,6 +71,7 @@ h1 {
     background-color: #ffc107;
     color: black;
 }
+
 .show-all:active {
     background-color: #e0a800;
 }
@@ -91,15 +92,21 @@ h1 {
     padding: 12px 16px;
     cursor: pointer;
     z-index: 10;
-    border-radius: 0; /* 🔳 Square border */
-    font-weight: bold; /* 🔼 Thicker arrow */
-}
-.scroll-arrow:hover {
-    background: rgba(205,93,5,0.8);
+    border-radius: 0;
+    font-weight: bold;
 }
 
-.scroll-arrow.left { left: 0; }
-.scroll-arrow.right { right: 0; }
+.scroll-arrow:hover {
+    background: rgba(205, 93, 5, 0.8);
+}
+
+.scroll-arrow.left {
+    left: 0;
+}
+
+.scroll-arrow.right {
+    right: 0;
+}
 
 .movie-container {
     display: flex;
@@ -110,8 +117,8 @@ h1 {
     padding: 10px 40px;
     white-space: nowrap;
     cursor: grab;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer and Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .movie-container.active {
@@ -122,6 +129,7 @@ h1 {
 .movie-container::-webkit-scrollbar {
     display: none;
 }
+
 .movie-card {
     background: #222;
     border-radius: 10px;
@@ -158,4 +166,37 @@ h1 {
     padding: 2px 6px;
     border-radius: 5px;
     font-size: 13px;
+}
+
+.artist-wrapper {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 16px;
+}
+
+.artist-card {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.artist-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.artist-name {
+    font-weight: bold;
+}
+
+.artist-rank {
+    font-size: 14px;
+    color: gray;
+}
+
+.rank-change {
+    color: limegreen;
 }
