@@ -65,13 +65,11 @@ $movies = [
 ];
 if (!function_exists('displayMovies')) {
     function displayMovies($movies) {
-        echo '<div class="movie-wrapper">';
-        echo '<div class="movie-container">';
+
         foreach ($movies as $movie) {
             echo createMovieCard($movie);
         }
-        echo '</div>';
-        echo '</div>';
+
     }
 }
 
