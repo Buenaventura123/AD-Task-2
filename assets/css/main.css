@@ -65,6 +65,9 @@ h1 {
     z-index: 10;
     border-radius: 50%;
 }
+.scroll-arrow:hover {
+    background: rgba(205,93,5,0.8);
+}
 .scroll-arrow.left { left: 0; }
 .scroll-arrow.right { right: 0; }
 
@@ -79,19 +82,8 @@ h1 {
 }
 
 .movie-container::-webkit-scrollbar {
-    width: 0px;
-    height: 8px;
-    background: transparent;
+    display: none;
 }
-
-.movie-container {
-    -ms-overflow-style: none;
-}
-
-.movie-container {
-    scrollbar-width: none;
-}
-
 .movie-card {
     background: #222;
     border-radius: 10px;
