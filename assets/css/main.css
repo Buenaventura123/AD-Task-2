@@ -60,15 +60,17 @@ h1 {
     font-size: 2rem;
     background: rgba(0, 0, 0, 0.6);
     color: white;
-    border: none;
-    padding: 10px;
+    border: 2px solid white;
+    padding: 12px 16px;
     cursor: pointer;
     z-index: 10;
-    border-radius: 50%;
+    border-radius: 0; /* 🔳 Square border */
+    font-weight: bold; /* 🔼 Thicker arrow */
 }
 .scroll-arrow:hover {
     background: rgba(205,93,5,0.8);
 }
+
 .scroll-arrow.left { left: 0; }
 .scroll-arrow.right { right: 0; }
 
