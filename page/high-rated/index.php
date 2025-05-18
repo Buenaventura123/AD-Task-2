@@ -26,6 +26,7 @@ $highRated = array_filter($movies, function ($m) {
 <body>
     <?php echo createNavbar('High Rated'); ?>
     <div class="movie-wrapper">
+        <h1>High Rated Movies</h1>
         <div class="movie-container movie-list">
             <?php displayMovies($highRated); ?>
         </div>

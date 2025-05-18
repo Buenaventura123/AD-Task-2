@@ -25,6 +25,7 @@ $lowRated = array_filter($movies, function ($m) {
 <body>
     <?php echo createNavbar('Low Rated'); ?>
     <div class="movie-wrapper">
+        <h1>Low Rated Movies</h1>
         <div class="movie-container movie-list">
             <?php displayMovies($lowRated); ?>
         </div>
