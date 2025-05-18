@@ -70,7 +70,7 @@
     <!-- All Movies Section -->
     <div class="section-header">
         <h2>All Movies</h2>
-        <a class="show-all" href="../all">Show All</a>
+        <a class="show-all" href="../all-movies/index.php">Show All</a>
     </div>
     <div class="movie-wrapper">
         <button class="scroll-arrow left" onclick="scrollLeft('movieScroll')">&#8592;</button>
@@ -91,7 +91,7 @@
     <!-- Recommended Section -->
     <div class="section-header">
         <h2>Recommended</h2>
-        <a class="show-all" href="../recommended">Show All</a>
+        <a class="show-all" href="../recommended/index.php">Show All</a>
     </div>
     <div class="movie-wrapper">
         <button class="scroll-arrow left" onclick="scrollLeft('recommendedScroll')">&#8592;</button>
