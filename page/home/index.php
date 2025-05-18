@@ -1,8 +1,10 @@
-<?php include '../../components/navbar.component.php'; ?>
-<?php include '../../utils/movie.utils.php'; ?>
-<?php include '../../utils/artist.utils.php'; ?> <!-- make sure this is here BEFORE using $topArtists -->
-<?php include '../../components/template/recommended.component.php'; ?>
-<?php include '../../components/template/artist.component.php'; ?>
+<?php 
+include '../../components/navbar.component.php';
+include '../../utils/movie.utils.php';
+include '../../utils/artist.utils.php';
+include '../../components/template/recommended.component.php';
+include '../../components/template/artist.component.php'; 
+?>
 
 <!DOCTYPE html>
 <html>
