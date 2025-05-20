@@ -1,0 +1,15 @@
+{
+    "name": "admin/php_projects",
+    "autoload": {
+        "psr-4": {
+            "Admin\\PhpProjects\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Buenaventura123",
+            "email": "202310536@fit.edu.ph"
+        }
+    ],
+    "require": {}
+}
