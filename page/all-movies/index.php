@@ -2,6 +2,7 @@
 <?php include '../../utils/movie.utils.php'; ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>All Movies</title>
     <link rel="stylesheet" href="../../assets/css/main.css">
@@ -14,11 +15,14 @@
         }
     </style>
 </head>
+
 <body>
     <?php echo createNavbar(active: 'All Movies'); ?>
     <h1 style="text-align:center;">All Movies</h1>
     <div class="grid-container">
-        <?php foreach ($movies as $movie) echo createMovieCard($movie); ?>
+        <?php foreach ($movies as $movie)
+            echo createMovieCard($movie); ?>
     </div>
 </body>
+
 </html>

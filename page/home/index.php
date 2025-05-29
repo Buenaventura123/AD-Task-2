@@ -1,9 +1,9 @@
-<?php 
+<?php
 include '../../components/navbar.component.php';
 include '../../utils/movie.utils.php';
 include '../../utils/artist.utils.php';
 include '../../components/template/recommended.component.php';
-include '../../components/template/artist.component.php'; 
+include '../../components/template/artist.component.php';
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +37,8 @@ include '../../components/template/artist.component.php';
         <h2>Top Artists</h2>
     </div>
     <div class="artist-wrapper" id="artistScroll">
-        <?php foreach ($topArtists as $artist) echo createArtistCard($artist); ?>
+        <?php foreach ($topArtists as $artist)
+            echo createArtistCard($artist); ?>
     </div>
 
     <!-- Recommended Section -->
