@@ -1,8 +1,9 @@
 {
-    "name": "admin/php_projects",
+    "name": "admin/ad-task-2",
+    "description": "MOVIE RATES 0.2",
     "autoload": {
         "psr-4": {
-            "Admin\\PhpProjects\\": "src/"
+            "Admin\\AdTask2\\": "src/"
         }
     },
     "authors": [

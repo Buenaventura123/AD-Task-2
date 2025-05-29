@@ -1,6 +1,7 @@
 <?php
-include_once __DIR__ . '/../../utils/movie.utils.php';
-include_once __DIR__ . '/../../components/navbar.component.php';
+require_once __DIR__ . '/../../bootstrap.php';
+include_once BASE_PATH . '/utils/movie.utils.php';
+include_once BASE_PATH . '/components/navbar.component.php';
 
 $lowRated = array_filter($movies, function ($m) {
     return $m["rating"] < 7;
@@ -12,7 +13,7 @@ $lowRated = array_filter($movies, function ($m) {
 <head>
     <meta charset="UTF-8">
     <title>Low Rated Movies</title>
-    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
     <style>
         .movie-list {
             display: flex;

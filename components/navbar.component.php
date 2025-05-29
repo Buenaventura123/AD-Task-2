@@ -1,6 +1,6 @@
-
 <?php
-function createNavbar($active = '') {
+function createNavbar($active = '')
+{
     $base = '/AD-Task-2';
 
     return '
