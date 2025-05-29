@@ -1,28 +1,29 @@
 <?php
-include '../../components/navbar.component.php';
-include '../../utils/movie.utils.php';
-include '../../utils/artist.utils.php';
-include '../../components/template/recommended.component.php';
-include '../../components/template/artist.component.php';
+require_once __DIR__ . '/../../bootstrap.php';
+require_once BASE_PATH . '/components/navbar.component.php';
+require_once BASE_PATH . '/utils/movie.utils.php';
+require_once BASE_PATH . '/utils/artist.utils.php';
+require_once BASE_PATH . '/components/template/recommended.component.php';
+require_once BASE_PATH . '/components/template/artist.component.php';
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>All Movies</title>
-    <link rel="stylesheet" href="../../assets/css/main.css">
-    <script src="../../assets/js/scroll.js"></script>
-
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="/assets/js/scroll.js" defer></script>
 </head>
 
 <body>
-    <?php echo createNavbar(active: 'All Movies'); ?>
+    <?= createNavbar('All Movies') ?>
 
     <!-- All Movies Section -->
     <div class="section-header">
         <h2>All Movies</h2>
-        <a class="show-all" href="../all-movies/index.php">Show All</a>
+        <a class="show-all" href="/page/all-movies/index.php">Show All</a>
     </div>
     <div class="movie-wrapper">
         <button class="scroll-arrow left" onclick="scrollLeft('movieScroll')">&#8592;</button>
@@ -37,14 +38,15 @@ include '../../components/template/artist.component.php';
         <h2>Top Artists</h2>
     </div>
     <div class="artist-wrapper" id="artistScroll">
-        <?php foreach ($topArtists as $artist)
-            echo createArtistCard($artist); ?>
+        <?php foreach ($topArtists as $artist): ?>
+            <?= createArtistCard($artist); ?>
+        <?php endforeach; ?>
     </div>
 
     <!-- Recommended Section -->
     <div class="section-header">
         <h2>Recommended</h2>
-        <a class="show-all" href="../recommended/index.php">Show All</a>
+        <a class="show-all" href="/page/recommended/index.php">Show All</a>
     </div>
     <div class="movie-wrapper">
         <button class="scroll-arrow left" onclick="scrollLeft('recommendedScroll')">&#8592;</button>
