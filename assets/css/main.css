@@ -9,7 +9,7 @@ body {
 
 body::-webkit-scrollbar {
     display: none;
-} 
+}
 
 h1 {
     font-size: 2.5rem;
@@ -223,4 +223,20 @@ header .navbar {
 
 .rank-change {
     color: limegreen;
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    padding-left: 100px;
 }

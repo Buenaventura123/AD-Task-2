@@ -10,12 +10,7 @@ require_once BASE_PATH . '/utils/movie.utils.php';
     <title>Recommended Movies</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
+
     </style>
 </head>
 
