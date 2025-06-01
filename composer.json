@@ -1,6 +1,5 @@
 {
     "name": "admin/ad-task-2",
-    "description": "MOVIE RATES 0.2",
     "autoload": {
         "psr-4": {
             "Admin\\AdTask2\\": "src/"

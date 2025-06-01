@@ -1,19 +1,19 @@
 <?php return array(
     'root' => array(
-        'name' => 'admin/php_projects',
+        'name' => 'admin/ad-task-2',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '3a1341fd0e5de70230974f9a5dcd0d4d72ad07de',
+        'reference' => '111688c44680489cd0fca273d78cd4feea4f40e3',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        'admin/php_projects' => array(
+        'admin/ad-task-2' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '3a1341fd0e5de70230974f9a5dcd0d4d72ad07de',
+            'reference' => '111688c44680489cd0fca273d78cd4feea4f40e3',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
