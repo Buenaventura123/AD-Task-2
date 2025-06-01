@@ -14,15 +14,6 @@ $lowRated = array_filter($movies, function ($m) {
     <meta charset="UTF-8">
     <title>Low Rated Movies</title>
     <link rel="stylesheet" href="/assets/css/main.css">
-    <style>
-        .movie-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            padding: 20px;
-            justify-content: center;
-        }
-    </style>
 </head>
 
 <body>

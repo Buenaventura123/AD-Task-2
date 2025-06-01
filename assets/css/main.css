@@ -25,8 +25,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
     z-index: 100;
+    background: rgba(16, 15, 15, 0.8);
+    backdrop-filter: blur(10px);
 }
 
 header .navbar {
@@ -37,7 +38,7 @@ header .navbar {
     justify-content: space-between;
     border-bottom: solid white;
     border-width: thin;
-
+    padding: 20px;
 }
 
 .navbar .logo {

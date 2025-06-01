@@ -1,5 +1,6 @@
 <?php
-function createArtistCard($artist) {
+function createArtistCard($artist)
+{
     return '
         <div class="artist-card">
             <img src="' . $artist["image"] . '" alt="' . htmlspecialchars($artist["name"]) . '">
